@@ -9,7 +9,7 @@
 
 <style>
     .button {
-        background-color: #4CAF50;
+        background-color: seagreen;
         /* Green */
         border: none;
         color: white;
@@ -23,23 +23,23 @@
         cursor: pointer;
     }
 
-    .button1 {
-        background-color: seagreen;
-        color: white;
-        border: 2px solid green;
-    }
+    .btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
 
-    .button1:hover {
-        background-color: green;
-        color: white;
-    }
+.btn-group .button:hover {
+  background-color: #247726;
+}
 </style>
-<button class="button button1">HOME</button>
+<div class="btn-group">
+    <button class="button">HOME</button>
 <br>
-<button class="button button1">About</button>
+<button class="button">About</button>
 <br>
-<button class="button button1">Blog</button>
+<button class="button">Blog</button>
 <br>
+
+</div>
 
 
 
